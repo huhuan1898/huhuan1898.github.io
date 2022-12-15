@@ -30,7 +30,7 @@
 
 | 水平  | 编程语言        | 技术领域               | 技术栈                  |
 |-----|-------------|--------------------|----------------------|
-| 精通  | Java, C     | 大数据生态, 数据集成, 内核开发  | Spark, Flink, Linux  |
+| 精通  | Java, C     | 大数据生态, 数据集成, 并行编程  | Spark, Flink, Linux  |
 | 熟练  | Scala, Python | 数据湖, 实时计算, 分布式计算   | Iceberg, HBase, MySQL |
 | 掌握  | JavaScript* | 前端, 后端, 运维, DevOps | React, Spring, Docker |
 
@@ -50,16 +50,16 @@
   - 数据集成领域负责人，主导小米数据集成引擎和小米数据集成产品的规划和建设
   - 平台架构师，主导部门内基础架构设计、技术难点攻关、疑难问题排查等跨团队技术议题
   - 全栈工程师，承担从后端到引擎的全链路建设，Flink\Iceberg 开发者
-  - 基层管理者，下属团队成员 3-5 人
+  - 小组组长，下属小组成员 2-5 人
 - 技术栈
   - PL: Java
-  - Data: Flink, Iceberg, Hive/HDFS, MySQL, TiDB, Doris, Talos(类Kafka，自研消息队列)
-  - Web: AntD, React, SpringBoot
-  - Ops & DevOps: Docker, GitLab, Falcon, Kubernetes
+  - Data: Flink, Iceberg, Hive/HDFS, Doris, Talos(类Kafka，自研消息队列)
+  - Web & Service: AntD, React, SpringBoot, MySQL, TiDB
+  - Ops & DevOps: Docker, GitLab, Falcon, Kubernetes, Yarn
 
 ### 小米 - 新零售算法
 - 2021.01 - 2021.09
-- 小米新零售希望依托先进算法能力改善线下零售店的体验和效率，线下销服场景长期采用传统模式运转，算法和数据方面的基础设施严重缺失。
+- 小米新零售希望依托先进算法能力改善线下零售店的体验和效率，线下销服场景长期采用传统模式运转，算法和数据方面的基础设施严重缺失
 - 我主导了新零售算法的部分基础数据服务和部分数据仓库主题的建设
 - 职责
   - 主导小米商城数据仓库的订单主题的建设
@@ -67,20 +67,89 @@
   - 主导社区中台和评论中台的维护
 - 技术栈
   - PL: Java, Scala, Go
-  - Data: Spark, Hive/HDFS, HBase, Pegasus, MySQL
-  - Web: Rose(自研Web框架), SpringBoot, Thrift
+  - Data: Spark, Hive/HDFS, HBase, Pegasus
+  - Web & Service: Rose(自研Web框架), SpringBoot, Thrift, MySQL
+  - Ops & DevOps: Docker, GitLab, Falcon, Kubernetes, Yarn
 
 ### 小米 - 内容中台
 - 2018.05 - 2021.01
-- 小米内容中台服务于MIUI和预装应用的信息流、搜索、推荐等内容业务，内容来源于各大内容厂商，在内容中台进行内容理解后再根据不同授权协议
+- 小米内容中台服务于MIUI和预装应用的信息流、搜索、推荐等内容业务，是一个内容的引入、存储、处理、应用、运营、分析、结算的一站式平台，内容来源于各大内容厂商，在内容中台进行内容理解后再根据不同授权协议分发到各业务中，内容业务对时效性和吞吐的要求都非常高
+- 我主导了内容中台的工程工作，设计了基于HBase的多级逻辑内容池存储架构和基于ElasticSearch的差异逻辑索引方案，极大的减少了存储成本，提供了极佳的业务拓展性
+- 小米大数据部的前端项目前期主要贡献者之一，引入了基于AntD/React的前后端分离架构
+- 职责
+  - 内容中台工程领域负责人，主导了小米内容中台的几乎全部工程工作
+  - 全栈工程师，承担前端、后端、引擎的全链路建设，并培养工程团队成为全栈式团队
+  - 短期兼任产品经理，全程独立交付小米内容运营平台和小米内容标注平台
+  - 基层团队管理者，下属团队成员 5-10 人
+- 技术栈
+  - PL: Java, Scala, JavaScript
+  - Data: HBase, Hive/HDFS, Spark, Flink, Pegasus, ElasticSearch, Kylin, Talos/Kafka
+  - Web & Service: AntD, React, SpringBoot, Thrift, ZooKeeper, Redis
+  - Ops & DevOps: GitLab, Falcon, Yarn
 
 ### 小红书 - 智能客服
 - 2017.11-2018.04
+- 小红书客服体系服务于小红书电商，负责系统包括咨询管理、工单管理、售后管理和客服机器人，早期的工程架构较为混乱，就职期间处于技术转型期
+- 我主导了客服技术团队的组建过程，主导了客服体系的服务拆分和向Java技术栈转型的过程
+- 职责
+  - 技术负责人，主导了技术团队的组建过程，主导了几乎全部技术决策
+  - 全栈工程师，承担前端、后端的开发，承担Java技术培训
+  - 短期兼任产品经理，与业务团队沟通和规划产品需求
+- 技术栈
+  - PL: Python, Java, JavaScript
+  - Web & Service: Vue, Flask, Spring, Thrift, Mongo, Redis, ElasticSearch
+  - Ops & DevOps: GitLab, Docker, Kubernetes, Jenkins
 
 ### 深瞐科技 - 车辆识别
+- 2017.03 - 2017.11
+- 深瞐科技是安防领域知名的人工智能算法供应商，车辆识别产品依托于深瞐科技的顶尖车辆识别技术，采用计算机视觉技术处理照片、视频获取车辆、行人的特征，结合大数据技术分析时空关系，实现对高危车辆、假套无牌车辆的挖掘、追踪、布控
+- 我主导了车辆识别产品的架构工作，负责核心模块大数据平台的建设，负责新技术的引进和培训
+- 职责
+  - 产品架构师，主导架构演进更新工作，主导新技术的引进和预研
+  - 大数据平台负责人，引进了Lambda架构，完成主存储从HDFS变更为HBase，完成Spark、Kafka落地的预研
+  - 前端平台 & 运维平台 & DevOps平台立项人，引入AntD/React、Flask、GitLab
+  - 技术专家，负责团队的技术培训，承担部分重保项目的售前技术支持、系统对接支持、交付支持、运维支持
+- 技术栈
+  - PL: Python, Java, JavaScript, C++
+  - Data: HDFS, HBase, ElasticSearch, Spark, Kafka
+  - Web & Service: Netty, PHP, AntD, React, Flask, MySQL
+  - Ops & DevOps: Fabric, Flask, GitLab
 
 ### 支付宝 - 实时风控
+- 2014.05 - 2017.02
+- 支付宝实时风控体系依托风控大数据平台，基于海量数据刻画出各类账户的风险特征，结合在线的规则引擎和模型引擎，实现了业界最顶尖的实时风控技术，离线批量计算单作业处理数据量级高达百亿级，日均实时交易处理量达数亿笔
+- 我负责了核心模块之一的变量中心，独自承担了整个项目的落地，包括在线实时服务、离线计算作业、产品页面、数据看板等
+- 职责
+  - 变量中心负责人，独自承担了整个项目的落地，交付产品得到业务高度评价并作为案例宣传
+  - 离线风控实验室核心开发人员，主要负责离线计算作业框架、对比实验结果量化评估的部分
+  - 风控数据集市、规则引擎重要开发者，负责实时风控服务、离线计算作业、产品页面的开发维护
+- 技术栈
+  - PL: Java, Scala, JavaScript
+  - Data: Spark, MapReduce, HDFS, HBase, Redis
+  - Web & Service: AntD, React, Angular, SpringMVC, RocketMQ, MySQL
+  - Ops & DevOps: GitLab, ODPS
 
 ### 支付宝 - 网商银行
+- 2015.02 - 2015.06
+- 银行与第三方支付在监管上的要求差异巨大，网商银行风控体系依托于支付宝积累的先进风控经验，针对银行场景做出适配，是蚂蚁金服力推的金融云的核心组件
+- 职责
+  - 实时风控体系项目负责人，带领和培养外包团队从无到有搭建了整个体系
+  - 核心设计开发人员，负责最核心的风险识别引擎和规则引擎的实现
+- 技术栈
+  - PL: Java, JavaScript
+  - Web & Service: Angular, SpringMVC, MySQL, RocketMQ
 
 ### 华为 - 高端存储
+- 2011.07 - 2014.04
+- 华为高端存储阵列产品是华为重兵投入的全自研主航道产品，采用了多项激进技术，夺得了业界性能第一。全产品代码规模上百万行，采用全异步方式，核心逻辑全部在内核态运行，开发过程对并发编程的要求极高
+- 职责
+  - 设计团队核心成员、预备架构师，全程参与了高端存储架构、全闪存阵列架构的高级别架构研讨会
+  - 精兵团队核心成员，核心系统Cache系统重构项目核心开发人员，疑难问题攻关组成员
+  - 公共组件小组负责人，负责分布式组件、数据结构组件和算法组件的开发和维护
+    - 分布式组件：分布式事务、分布式锁
+    - 数据结构组件： BTree、SkipList、AvlTree、RBTree、HashMap
+    - 算法组件：范围锁、DIF、Hash
+  - 容灾特性组骨干，负责虚拟卷系统的核心模块：IO模块、资源管理模块
+- 技术栈
+  - PL: C, C++
+  - Linux Kernel Module
