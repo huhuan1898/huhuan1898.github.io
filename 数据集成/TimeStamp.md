@@ -82,6 +82,9 @@ https://cwiki.apache.org/confluence/display/hive/languagemanual+types#LanguageMa
 
 https://github.com/apache/parquet-format/blob/master/LogicalTypes.md#local-semantics-timestamps-not-normalized-to-utc
 
+TimeStamp(isAdjustedToUTC=false): 对应 Flink 的 TimeStamp，不带时区信息的时间类型，无论本地时区如何设置，总是展示为同样的时间值
+TimeStamp(isAdjustedToUTC=true): 对应 Flink 的 TimeStamp_LTZ，按设置的本地时区信息动态改变展示的时间值
+
 > **Instant semantics (timestamps normalized to UTC)**
 >
 > A TIMESTAMP with isAdjustedToUTC=true is defined as the number of milliseconds, microseconds or nanoseconds (depending on the unit parameter being MILLIS, MICROS or NANOS, respectively) elapsed since the Unix epoch, 1970-01-01 00:00:00 UTC. Each such value unambiguously identifies a single instant on the time-line.
