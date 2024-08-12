@@ -35,7 +35,7 @@
 
 | 水平  | 编程语言        | 技术领域                  | 技术                          |
 |-----|-------------|-----------------------|-----------------------------|
-| 精通  | Java/Scala, C     | 大数据生态, 数据集成, 并行编程     | Spark, Flink, Hadoop |
+| 精通  | Java/Scala, C     | 大数据生态, 数据集成     | Spark, Flink, Hadoop |
 | 熟练  | Python, SQL  | 数据湖, 后端开发, 内核开发 | Paimon/Iceberg, HBase, MySQL       |
 | 掌握  | TypeScript | 前端开发, 搜索引擎, OLAP    | React/Vue, Spring, Kafka, ES     |
 
@@ -66,8 +66,8 @@
   - 全栈工程师，承担从后端到引擎的全链路建设，Flink\Iceberg 开发者
   - 小组组长，小组成员 3-6 人
 - 技术栈
-  - Core: Java/Scala, FlinkCDC/FlinkSQL, Hive/Iceberg, Hadoop, Talos(自研消息队列), Thrift
-  - Others: React, Spring, MySQL, TiDB, Doris, ZooKeeper
+  - Core: Java/Scala, FlinkCDC/FlinkSQL, Hive/Iceberg, Hadoop, Thrift
+  - Others: React, Spring, MySQL, TiDB, Doris, ZooKeeper, Talos(自研消息队列)
 
 ### 小米 - 新零售算法
 - 2021.01 - 2021.09
@@ -80,7 +80,7 @@
   - 小组组长，小组成员 3-4 人
 - 技术栈
   - Core: Java/Scala, Spark/Flink, Hive, Hadoop, HBase/Pegasus, Thrift
-  - Others: Rose(自研 Web 框架), Spring, MySQL, Go
+  - Others: Spring, MySQL, Go, Rose(自研 Web 框架)
 
 ### 小米 - 内容中台
 - 2018.05 - 2021.01
@@ -89,7 +89,7 @@
 - 小米大数据部前端项目的早期主要贡献者之一，引入了基于 AntD/React 的前后端分离架构
 - 职责
   - 内容中台工程领域负责人，主导了小米内容中台的几乎全部工程领域工作
-  - 全栈工程师，承担前端、后端、引擎的全链路建设，并培养工程团队成为全栈工程师团队
+  - 全栈工程师，承担前后端、大数据的全链路开发，并培养下属团队成为全栈工程师团队
   - 短期兼任产品经理，全程独立交付小米内容运营平台和小米内容标注平台
   - 内容工程组基层主管，团队成员 6-10 人
 - 技术栈
@@ -111,7 +111,7 @@
 ### 深瞐科技 - 车辆识别
 - 2017.03 - 2017.11
 - 深瞐科技是安防领域知名的人工智能算法供应商，车辆识别产品依托于深瞐科技的顶尖车辆识别技术，采用计算机视觉技术处理照片、视频获取车辆、行人的特征，结合大数据技术分析时空关系，实现对高危车辆、假套无牌车辆的挖掘、追踪、布控
-- 我主导了车辆识别产品的架构工作，负责核心模块大数据平台的建设，负责新技术的引进和培训
+- 我主导了车辆识别产品的架构工作，负责了核心模块大数据平台的建设，作为技术专家承担了技术培训和重要项目保障等工作
 - 职责
   - 产品架构师，主导车辆识别产品的架构演进工作，主导新技术的引进和预研
   - 大数据平台负责人，引进了 Lambda 架构，完成主存储从 HDFS 变更为 HBase，完成 Spark、Kafka 落地的预研
