@@ -75,10 +75,10 @@
 - 我主导了内容中台的工程领域工作，设计了基于 HBase 的多级逻辑内容池存储架构和基于 ElasticSearch 的差异逻辑索引方案，极大的减少了存储成本，提供了极佳的业务拓展性
 - 小米大数据部前端项目的早期主要贡献者之一，引入了基于 AntD/React 的前后端分离架构
 - 职责
-  - 内容工程组基层主管，团队成员 6-10 人
   - 内容中台工程领域负责人，主导了小米内容中台的几乎全部工程领域工作
   - 全栈工程师，承担前后端、大数据的全链路开发，并培养下属团队成为全栈工程师团队
-  - 短期兼任产品经理，独自全栈交付小米内容运营平台和小米内容标注平台
+  - 短期兼任产品经理，全程独立交付小米内容运营平台和小米内容标注平台
+  - 内容工程组基层主管，团队成员 6-10 人
 - 技术栈
   - Core: Java/Scala, Spark/Flink, HBase/Pegasus/Redis, Hive, Hadoop, ElasticSearch, Thrift, Talos/Kafka
   - Others: TypeScript, React, Spring, MySQL, ZooKeeper, Kylin
@@ -108,4 +108,4 @@
     - 算法组件：范围锁、DIF、Hash
   - 容灾特性组骨干，负责虚拟卷系统的核心模块：IO 模块、资源管理模块
 - 技术栈
-  - Core: C/C++, Linux Kernel
+  - Core: C, C++, Linux Kernel
